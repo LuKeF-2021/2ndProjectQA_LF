@@ -1,0 +1,8 @@
+- hosts: all
+  tasks:
+  - name: 'Transfer Install Jenkins file to VM'
+    copy: src=~/projectFiles/jenkinsInstall.sh dest=~/
+  - name: 'Give executable rights to file'
+    shell: sudo chmod +x jenkinsInstall.sh
+  - name: 'Execute script - Installing Jenkins (takes longer)'
+    shell: ./jenkinsInstall.sh
