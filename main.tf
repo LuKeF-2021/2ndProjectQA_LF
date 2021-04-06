@@ -1,8 +1,7 @@
 provider "aws" {
   version = "~> 2.0"
   region = var.AWS_REGION
-  access_key = var.access_key
-  secret_key = var.secret_key
+  shared_credentials_file = "~/.aws/credentials"
 }
 
 module "aws_vpc" {
