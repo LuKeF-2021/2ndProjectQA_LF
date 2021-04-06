@@ -6,3 +6,8 @@
     shell: sudo chmod +x jenkinsInstall.sh
   - name: 'Execute script - Installing Jenkins (takes longer)'
     shell: ./jenkinsInstall.sh
+  - name: 'Display initial admin password'
+    shell: cd .. && sudo chmod a+rwx jenkins/.jenkins/secrets/initialAdminPassword && cat jenkins/.jenkins/secrets/initialAdminPassword
+    register: details
+
+  - debug: msg="password = {{details.stdout}}"  
