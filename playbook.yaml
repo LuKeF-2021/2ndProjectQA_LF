@@ -1,12 +1,8 @@
-- hosts: 35.176.97.62
+- hosts: 18.133.246.27
   become: true
   tasks:
-  - name: 'Transfer Install Jenkins file to VM'
-    copy:  src=~/projectFiles/jenkinsInstall.sh dest=~/
-  - name: 'Give executable rights to file'
-    shell: sudo chmod +x jenkinsInstall.sh
-  - name: 'Execute script - Installing Jenkins (takes longer)'
-    shell: ./jenkinsInstall.sh
+  - name: 'Install Jenkins'
+    script: /home/ubuntu/projectFiles/jenkinsInstall.sh
   - name: 'Display initial admin password'
     shell: cd .. && cat jenkins/.jenkins/secrets/initialAdminPassword
     register: details
