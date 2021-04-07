@@ -7,21 +7,28 @@ resource "aws_security_group" "sgProjectPublic" {
     from_port = 22
     to_port = 22
     protocol = "tcp"
-    cidr_blocks =  [var.open_internet]
+    cidr_blocks =  [var.configure_VM_CIDR]
   }
 
   ingress {
     from_port = 80
     to_port = 80
     protocol = "tcp"
-    cidr_blocks = [var.configure_VM_CIDR]
+    cidr_blocks = [var.open_internet]
   }
 
   ingress {
     from_port = 3306
     to_port = 3306
     protocol = "tcp"
-    cidr_blocks = [var.configure_VM_CIDR]
+    cidr_blocks = [var.vpc_range_CIDR]
+  }
+
+  ingress {
+    from_port = 8080
+    to_port = 8080
+    protocol = "tcp"
+    cidr_blocks = [var.open_internet]
   }
 
   egress {
@@ -46,21 +53,28 @@ resource "aws_security_group" "sgProjectPrivate" {
     from_port = 22
     to_port = 22
     protocol = "tcp"
-    cidr_blocks =  [var.open_internet]
+    cidr_blocks =  [var.configure_VM_CIDR]
   }
 
   ingress {
     from_port = 80
     to_port = 80
     protocol = "tcp"
-    cidr_blocks = [var.configure_VM_CIDR]
+    cidr_blocks = [var.open_internet]
   }
 
   ingress {
     from_port = 3306
     to_port = 3306
     protocol = "tcp"
-    cidr_blocks = [var.configure_VM_CIDR]
+    cidr_blocks = [var.vpc_range_CIDR]
+  }
+
+  ingress {
+    from_port = 8080
+    to_port = 8080
+    protocol = "tcp"
+    cidr_blocks = [var.open_internet]
   }
 
   egress {
