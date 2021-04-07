@@ -7,7 +7,7 @@ resource "aws_security_group" "sgProjectPublic" {
     from_port = 22
     to_port = 22
     protocol = "tcp"
-    cidr_blocks =  [var.configure_VM_CIDR]
+    cidr_blocks =  [var.open_internet]
   }
 
   ingress {
@@ -53,7 +53,7 @@ resource "aws_security_group" "sgProjectPrivate" {
     from_port = 22
     to_port = 22
     protocol = "tcp"
-    cidr_blocks =  [var.configure_VM_CIDR]
+    cidr_blocks =  [var.open_internet]
   }
 
   ingress {
