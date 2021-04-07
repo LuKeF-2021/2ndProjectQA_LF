@@ -1,4 +1,5 @@
-- hosts: all
+- hosts: 18.133.237.140
+  become: true
   tasks:
   - name: 'Transfer Install Jenkins file to VM'
     copy: src=~/projectFiles/jenkinsInstall.sh dest=~/
@@ -7,7 +8,18 @@
   - name: 'Execute script - Installing Jenkins (takes longer)'
     shell: ./jenkinsInstall.sh
   - name: 'Display initial admin password'
-    shell: cd .. && sudo chmod a+rwx jenkins/.jenkins/secrets/initialAdminPassword && cat jenkins/.jenkins/secrets/initialAdminPassword
+    shell: cd .. && cat jenkins/.jenkins/secrets/initialAdminPassword
     register: details
 
   - debug: msg="password = {{details.stdout}}"  
+
+  - name: 'install aws cli'
+    shell: sudo apt update -y && sudo apt install curl unzip -y && curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && unzip awscliv2.zip && sudo ./aws/install
+
+- hosts: all
+  tasks:
+  - name: 'Install docker on VMs'
+    shell: sudo apt-get update && sudo apt install curl -y && curl https://get.docker.com | sudo bash
+  - name: 'restart hosts'
+    shell: sudo systemctl restart docker
+
