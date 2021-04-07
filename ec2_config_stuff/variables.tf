@@ -6,10 +6,18 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
-variable "subnet_id" {
+variable "subnet_public_id" {
+  default = "12.0.1.0/24"
+}
+
+variable "subnet_private_id"{
+  default = "12.0.2.0/24"
+}
+
+variable "vpc_security_group_Jenkins" {
   default = "null"
 }
 
-variable "vpc_security_group_ids" {
+variable "vpc_security_group_testvm" {
   default = "null"
 }
