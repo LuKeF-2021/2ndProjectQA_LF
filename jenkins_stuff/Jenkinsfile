@@ -16,15 +16,5 @@ pipeline {
         sh './jenkins_stuff/jenkins_scripts/build-containers.sh'
       }
     }
-    stage('Do backend and frontend tests') {
-      steps {
-        ECHO "do this"
-      }
-    }
-    stage('Build images onto eks cluster') {
-      steps {
-        ECHO "do this"
-      }
-    }
   }
 }
