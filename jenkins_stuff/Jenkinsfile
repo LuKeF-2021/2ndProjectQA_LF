@@ -18,6 +18,7 @@ pipeline {
     }
     stage('Build containers to store images') {
       steps {
+        sh 'chmod +x ./jenkins_stuff/jenkins_scripts/build-containers.sh'
         sh './jenkins_stuff/jenkins_scripts/build-containers.sh'
       }
     }
