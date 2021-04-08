@@ -21,9 +21,10 @@ cd ..
 
 echo "Pushing images to DockerHub"
 
+sh './logindocker.sh'
 sudo docker tag frontend:latest lukef2021/frontend:latest
 sudo docker tag backend:latest lukef2021/backend:latest
-sudo docker login -u $USERNAME -p $PASSWORD
+sudo docker login -u lukef2021 -p $PASSWORD
 sudo docker push lukef2021/frontend:latest
 sudo docker push lukef2021/backend:latest
 
