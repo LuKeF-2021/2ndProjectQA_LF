@@ -4,16 +4,16 @@ echo "Docker image building in process"
 
 # finding frontend/Dockerfile
 echo "build frontend image started"
-cd ..
+cd jenkins stuff
 cd frontend
-sudo docker build -t frontend:latest
+sudo docker build -t frontend:latest .
 cd ..
 
 # finding backend/Dockerfile
 echo "build backend image started"
 cd backend
-sudo docker build -t backend:latest
-
+sudo docker build -t backend:latest .
+cd ..
 # builds complete by this stage, time to push images to DockerHub
 
 echo "Pushing images to DockerHub"
