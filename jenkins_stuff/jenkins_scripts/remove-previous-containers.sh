@@ -6,4 +6,5 @@ sudo docker stop backend
 
 sudo docker rm -f frontend
 sudo docker rm -f backend
+sudo docker network rm project-network
 EOF
