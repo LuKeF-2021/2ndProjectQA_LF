@@ -4,6 +4,11 @@ pipeline {
     PASSWORD=credentials('docker_password')
   }
   stages {
+    stage('Remove previous containers') {
+      steps {
+        
+      }
+    }
     stage('Build Docker images') {
       steps {
         sh 'chmod +x ./jenkins_stuff/jenkins_scripts/docker-image-build.sh'
