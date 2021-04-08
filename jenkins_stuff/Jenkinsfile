@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage('Build Docker images') {
       steps {
+        chmod +x './jenkins_stuff/jenkins_scripts/docker-image-build.sh'
         sh './jenkins_stuff/jenkins_scripts/docker-image-build.sh'
       }
     }
