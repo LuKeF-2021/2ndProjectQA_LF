@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# get username and password
+source ~/.bash_profile
+
 echo "Docker image building in process"
 
 # finding frontend/Dockerfile
