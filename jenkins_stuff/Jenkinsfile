@@ -6,5 +6,21 @@ pipeline {
         sh './jenkins_scripts/docker-image-build.sh'
       }
     }
+    stage('Pull images down from DockerHub to test vm') {
+      steps {
+        sh './jenkins_scripts/put-images-on-testvm.sh' 
+      }
+    }
+    stage('Build containers to store images'){
+      steps {
+        sh './jenkins_scripts/build-containers.sh'
+      }
+    }
+    stage('Do backend and frontend tests) {
+
+    }
+    stage('Build images onto eks cluster') {
+
+    }
   }
 }
