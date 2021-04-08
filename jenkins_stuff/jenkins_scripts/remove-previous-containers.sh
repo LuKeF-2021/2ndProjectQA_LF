@@ -6,4 +6,5 @@ sudo docker stop backend
 
 sudo docker rm frontend
 sudo docker rm backend
+sudo docker rm -f server
 EOF
