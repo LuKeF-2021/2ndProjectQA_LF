@@ -3,10 +3,6 @@
 ssh -o StrictHostKeyChecking=no -i /home/jenkins/.ssh/id_rsa ubuntu@18.133.247.125 << EOF 
 sh './logindocker.sh'
 sudo docker login -u lukef2021 -p $PASSWORD
-
-cd ~/jenkins_stuff/frontend
 sudo docker pull lukef2021/frontend:latest
-
-cd ~/jenkins_stuff/backend
 sudo docker pull lukef2021/backend:latest
 EOF
