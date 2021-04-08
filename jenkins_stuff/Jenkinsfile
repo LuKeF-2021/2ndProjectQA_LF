@@ -34,5 +34,11 @@ pipeline {
         sh './jenkins_stuff/jenkins_scripts/tests.sh'
       }
     }
+    stage('upload tested containers to docker hub') {
+      steps {
+        sh 'chmod +x ./jenkins_stuff/jenkins_scripts/push-images.sh'
+        sh './jenkins_stuff/jenkins_scripts/push-images.sh'
+      }
+    }
   }
 }
