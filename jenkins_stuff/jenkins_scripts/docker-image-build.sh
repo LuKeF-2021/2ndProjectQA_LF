@@ -20,8 +20,8 @@ echo "Pushing images to DockerHub"
 
 sudo docker tag frontend:latest lukef2021/frontend:latest
 sudo docker tag backend:latest lukef2021/backend:latest
-docker push lukef2021/frontend:latest
-docker push lukef2021/backend:latest
+sudo docker push lukef2021/frontend:latest
+sudo docker push lukef2021/backend:latest
 
 echo "images pushed, deleting local images"
 
