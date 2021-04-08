@@ -16,7 +16,7 @@ pipeline {
         sh './jenkins_stuff/jenkins_scripts/put-images-on-testvm.sh' 
       }
     }
-    stage('Build containers to store images') {
+    stage('Build containers to store images, run them.') {
       steps {
         sh 'chmod +x ./jenkins_stuff/jenkins_scripts/build-containers.sh'
         sh './jenkins_stuff/jenkins_scripts/build-containers.sh'
