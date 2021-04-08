@@ -3,17 +3,17 @@ pipeline {
   stages {
     stage('Build Docker images') {
       steps {
-        sh '.jenkins_stuff/jenkins_scripts/docker-image-build.sh'
+        sh './jenkins_stuff/jenkins_scripts/docker-image-build.sh'
       }
     }
     stage('Pull images down from DockerHub to test vm') {
       steps {
-        sh '.jenkins_stuff/jenkins_scripts/put-images-on-testvm.sh' 
+        sh './jenkins_stuff/jenkins_scripts/put-images-on-testvm.sh' 
       }
     }
     stage('Build containers to store images'){
       steps {
-        sh '.jenkins_stuff/jenkins_scripts/build-containers.sh'
+        sh './jenkins_stuff/jenkins_scripts/build-containers.sh'
       }
     }
     stage('Do backend and frontend tests) {
