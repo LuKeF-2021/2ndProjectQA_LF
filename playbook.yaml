@@ -1,4 +1,4 @@
-- hosts: 18.133.246.27
+- hosts: 35.178.198.31
   become: true
   tasks:
   - name: 'Install Jenkins'
