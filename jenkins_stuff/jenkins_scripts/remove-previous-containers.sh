@@ -1,6 +1,6 @@
 #! /bin/bash
 
-ssh -o StrictHostKeyChecking=no -i /home/ubuntu/.ssh/id_rsa ubuntu@35.176.207.137 << EOF
+ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ubuntu@35.176.207.137 << EOF
 sudo docker stop frontend
 sudo docker stop backend
 
