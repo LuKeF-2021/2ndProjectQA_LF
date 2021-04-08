@@ -5,4 +5,4 @@ sh './logindocker.sh'
 sudo docker login -u lukef2021 -p $PASSWORD
 sudo docker pull lukef2021/frontend:latest
 sudo docker pull lukef2021/backend:latest
-EOF 
+EOF
