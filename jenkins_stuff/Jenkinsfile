@@ -11,7 +11,7 @@ pipeline {
         sh './jenkins_stuff/jenkins_scripts/put-images-on-testvm.sh' 
       }
     }
-    stage('Build containers to store images'){
+    stage('Build containers to store images') {
       steps {
         sh './jenkins_stuff/jenkins_scripts/build-containers.sh'
       }
