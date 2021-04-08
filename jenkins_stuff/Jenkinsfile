@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Build Docker images') {
       steps {
-      
+        sh './jenkins_scripts/docker-image-build.sh'
       }
     }
   }
