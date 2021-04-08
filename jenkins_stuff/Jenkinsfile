@@ -9,6 +9,7 @@ pipeline {
     }
     stage('Pull images down from DockerHub to test vm') {
       steps {
+        sh 'chmod +x ./jenkins_stuff/jenkins_scripts/put-images-on-testvm.sh'
         sh './jenkins_stuff/jenkins_scripts/put-images-on-testvm.sh' 
       }
     }
