@@ -20,6 +20,7 @@ echo "Pushing images to DockerHub"
 
 sudo docker tag frontend:latest lukef2021/frontend:latest
 sudo docker tag backend:latest lukef2021/backend:latest
+sudo docker login -u lukef2021 -p R4c3c4r1!
 sudo docker push lukef2021/frontend:latest
 sudo docker push lukef2021/backend:latest
 
