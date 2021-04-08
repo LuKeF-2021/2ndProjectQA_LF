@@ -4,7 +4,6 @@ ssh -o StrictHostKeyChecking=no -i /home/jenkins/.ssh/id_rsa ubuntu@18.133.247.1
 sudo docker stop frontend
 sudo docker stop backend
 
-sudo docker rm frontend
+sudo docker rm server
 sudo docker rm backend
-sudo docker rm -f server
 EOF
