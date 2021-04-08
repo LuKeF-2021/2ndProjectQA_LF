@@ -1,5 +1,7 @@
 pipeline {
   agent any
+  environment {
+    PASSWORD=credentials('docker_password')
   stages {
     stage('Build Docker images') {
       steps {
