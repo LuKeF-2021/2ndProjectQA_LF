@@ -4,7 +4,7 @@ echo "Docker image building in process"
 
 # finding frontend/Dockerfile
 echo "build frontend image started"
-cd jenkins stuff
+cd jenkins_stuff
 cd frontend
 sudo docker build -t frontend:latest .
 cd ..
