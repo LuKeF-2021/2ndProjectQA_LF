@@ -16,7 +16,7 @@ pipeline {
         sh './jenkins_stuff/jenkins_scripts/build-containers.sh'
       }
     }
-    stage('Do backend and frontend tests) {
+    stage('Do backend and frontend tests') {
       steps {
         ECHO "do this"
       }
