@@ -6,7 +6,8 @@ pipeline {
   stages {
     stage('Remove previous containers') {
       steps {
-        
+        sh 'chmod +x ./jenkins_stuff/jenkins_scripts/remove-previous-containers.sh'
+        sh './jenkins_stuff/jenkins_scripts/remove-previous-containers.sh'
       }
     }
     stage('Build Docker images') {
