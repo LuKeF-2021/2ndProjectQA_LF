@@ -76,3 +76,10 @@ builds will end up on the production environment.
 <br>
 <h3>Future Improvements</h3>
 <br>
+If this project were to be expanded upon at a future date, some of the improvements to include would be as follows:
+<br>
+<li>Create more variables to account for commonly used values. This is refactoring of code which is good practice in the workplace.</li>
+<li>Make use of more environment variables and secret key methods to better secure login credentials and sensitive information. Some  
+files cannot be git ignored and you do not want sensitive information being published on a public repository.</li>
+<li>Automate in more areas of the project rather than manually intervening at certain points. Some points of this project were beyond MVP  
+to automate, however, that does not mean that they are impossible to do so. With less time constraint it would be useful to include.</li>
