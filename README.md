@@ -98,7 +98,14 @@ that end users could see and interact with. Below is an image of my Jenkins Pipe
 <br>
 <h3>Docker</h3>
 <br>
-Docker is a 
+Docker is a Containerisation tool largely used in industry for building applications based on containers. The idea is that a container is lightweight and contains  
+only the things needed to run the application successfully. Dependancies and libaries can be packaged up in a docker container and an image made of the application.  
+This makes using and updating the code standardised between different users and terminals, as it ensures that all needed installations are present for all developers.  
+Within this project specifically, the front end and back end were ran on difference containers and images of both respectively pushed up to my DockerHub repository.  
+These images were utilised by the test environment stage of the build, where Jenkins ran the tests included with the application every build cycle. Below are my pushed  
+images in my DockerHub repository:
+<br>
+<img src="https://user-images.githubusercontent.com/78487781/114140996-f094be00-9908-11eb-9f4b-78bbcaa0a96f.JPG">
 <br>
 <h3>Kubernetes</h3>
 <br>
