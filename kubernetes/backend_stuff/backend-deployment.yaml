@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontendApp
+  name: backendApp
   namespace: projectApp
   labels: 
-    app: frontendApp
+    app: backendApp
 spec:
   selector:
     matchLabels:
-      app: frontendApp
+      app: backendApp
   template:
     metadata:
       labels:
-        app: frontendApp
+        app: backendApp
     spec:
       containers:
-      - name: frontendApp
-        image: lukef2021/frontend
+      - name: backendApp
+        image: lukef2021/backend
         ports:
-        - containerPort: 5000
+        - containerPort: 5001
