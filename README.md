@@ -27,3 +27,9 @@ The MVP for this project was as follows:
 <br>
 <br>
 <h3>Using Jira to visualise tasks</h3>
+<br>
+To visualise the progress of the application, and have a reference for completed, in progress, and outstanding tasks a Jira Kanban board was used to store epics,  
+user stories and tasks. Epics are Large Parts of the code base that provide a lot of functionality that is broken down into User Stories and Tasks associated with  
+the Epic. Below is a screenshot of the Jira Board for the project (also the Board is linked at the top of this document):
+<br>
+<img src="https://user-images.githubusercontent.com/78487781/114131757-187d2500-98fb-11eb-8d37-2f44fba50b28.JPG">
