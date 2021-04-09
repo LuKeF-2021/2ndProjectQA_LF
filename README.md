@@ -78,12 +78,16 @@ As this project was focused around CI/CD rather than coding proficiency on the a
 Python Flask application pre-built for us to integrate into our project. This application came with premade tests that the instructors also made.  
 The results of these are shown below:  
 <br>
+<br>
 Front-end:
 <img src="https://user-images.githubusercontent.com/78487781/114134902-647e9880-9900-11eb-8188-09854b5038ad.JPG">
 <br>
 Back-end:
 <img src="https://user-images.githubusercontent.com/78487781/114134908-66485c00-9900-11eb-80ea-f7c7ea1c9b9d.JPG">
-
+<br>
+<br>
+As seen in the test results, the test coverage was nearly 100%. This almost guarantees that reliable code is being pushed out to the user,  
+until a new bug is discovered and added to the list of tests.
 <br>
 <h3>Future Improvements</h3>
 <br>
