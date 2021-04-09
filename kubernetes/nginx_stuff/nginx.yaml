@@ -6,25 +6,8 @@ metadata:
   labels:
     app: nginx
 spec:
-  
   selector:
     app: nginx
-  ports: 
-  - protocol: TCP
-    port: 80
-    targetPort: 80
-  type: LoadBalancer
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: nginx
-  labels: 
-    app: nginx
-spec:
-  selector:
-    matchLabels:
-      app: nginx
   template:
     metadata:
       labels:
