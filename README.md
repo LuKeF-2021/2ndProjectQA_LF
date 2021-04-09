@@ -46,6 +46,8 @@ is a screenshot demonstrating a Sprint being used in this project:
 <br>
 <h3>Workflow of Project</h3>
 <br>
+<img src="https://user-images.githubusercontent.com/78487781/114137534-41ee7e80-9904-11eb-9c55-3f55907bd9ac.JPG">
+<br>
 Each tool used will be discussed in more depth in their own sections further down this document. However, a brief overview of the project  
 structure will be discussed now.
 <br>
