@@ -1,0 +1,6 @@
+/variableValues.auto.tfvars
+/terraform.tfvars
+*.tfstate*
+.terraform/providers
+/awscliv2.zip
+*.aws*
