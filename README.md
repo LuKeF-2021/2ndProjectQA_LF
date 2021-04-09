@@ -1,1 +1,1 @@
-# 2ndProjectQA_LF
+# Cloud Native - Practical Project Specification
