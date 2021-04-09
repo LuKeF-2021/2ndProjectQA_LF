@@ -53,8 +53,10 @@ Firstly, a VPC (Virtual Private Cloud) needs to be configured, then infrastructu
 address ranges, making use of subnets and security groups to control traffic in and out. Terraform is leveraged to build out this infrastructure.  
 Next, Ansible uses files called 'Playbooks' to run 'Plays' on host VM instances. These 'Plays' are command line commands that do things such as  
 installing the aws cli onto hosts or installing Jenkins.  
+<br>
 After Ansible has installed Jenkins on an ec2 instance within the VPC, a Jenkins Pipeline can be built to stage various build tasks that Jenkins  
 goes and executes for you with high level priviledges.  
+<br>
 The end goal of this Pipeline is for docker images to be built and tested on a test environment, and then pushed up to a DockerHub Repository.  
 Upon completion of these build steps, Jenkins then pulls these docker images down and puts them onto Kubernetes pods in the production environment.  
 This ensures that a tested and working application is running for the end users continuously, as tests are carried out after commits and only successful  
