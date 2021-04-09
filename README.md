@@ -69,9 +69,19 @@ create infrastructure through a command line interface by making use of Terrafor
 and can be split into modules to easily isolate your ec2 code from say your RDS code. Each module contains a Main.tf, Variables.tf and Outputs.tf file,  
 a main.tf file is where the instance is created and outlined all the configuration for it (the same as if you were using the AWS Console). As the name suggests,  
 a variables.tf file stores variables that are used multiple times within the main.tf file, and outputs.tf displays any id's of the infrastructure set up.  
-This is very useful as most times an employee will not have access to the AWS Console, and therefore cannot check via a GUI for these id's.
+This is very useful as most times an employee will not have access to the AWS Console, and therefore cannot check via a GUI for these id's. A video has been  
+produced to demonstrate Terraform in action, this will be supplied seperately as the file is large.
 <br>
 <h3>Ansible</h3>
+<br>
+Ansible is a Configuration Management tool that allows tasks to be executed on 'hosts' (ec2 instances etc) in a structured way. Say you needed to put  
+multiple installations on multiple VM instances right upon creation, a lot of the installations would be repetitive and require manually ssh'ing into  
+each instance to run cli commands one by one, waiting for each to finish before applying the next. This equates to a lot of wasted time for developers,  
+and that is where Ansible comes in to simplify that aspect for dev's. As long as Ansible has ssh keys to allow it to communicate with the VM's it needs,  
+then a playbook can be created to neatly organise tasks with names to track the progress easily. Simply specify the hosts within an inventory.yaml file  
+and a playbook of tasks, and Ansible will go away and run all those tasks for you automatically and alert you when it is done. This requires no strict  
+monitoring from a developer and frees them up to work on other things while that playbook is running. As was mentioned in the above section, a video  
+demonstration has been produced for this and will be supplied seperately.
 <br>
 <h3>Jenkins/Pipelines</h3>
 <br>
