@@ -64,6 +64,13 @@ builds will end up on the production environment.
 <br>
 <h3>Terraform</h3>
 <br>
+Terraform is an Infrastructure Management technology, it allows for what is known as 'Infrastructure as Code'. Simply put, this means that Terraform can  
+create infrastructure through a command line interface by making use of Terraform (.tf) files. It follows a JSON-like notation of key and value pairs,  
+and can be split into modules to easily isolate your ec2 code from say your RDS code. Each module contains a Main.tf, Variables.tf and Outputs.tf file,  
+a main.tf file is where the instance is created and outlined all the configuration for it (the same as if you were using the AWS Console). As the name suggests,  
+a variables.tf file stores variables that are used multiple times within the main.tf file, and outputs.tf displays any id's of the infrastructure set up.  
+This is very useful as most times an employee will not have access to the AWS Console, and therefore cannot check via a GUI for these id's.
+<br>
 <h3>Ansible</h3>
 <br>
 <h3>Jenkins/Pipelines</h3>
