@@ -1,6 +1,8 @@
 #! /bin/bash
 
-cd ./kubernetes
+cd ..
+cd ..
+cd kubernetes
 kubectl apply -f namespace.yaml
 cd nginx_stuff
 kubectl apply -f nginx-configmap.yaml nginxlb.yaml nginx.yaml
