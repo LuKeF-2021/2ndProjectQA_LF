@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"security_group","Source":"./sg_config_stuff","Dir":"sg_config_stuff"},{"Key":"","Source":"","Dir":"."},{"Key":"RDS_instances","Source":"./rds_config_stuff","Dir":"rds_config_stuff"},{"Key":"aws_vpc","Source":"./vpc_config_stuff","Dir":"vpc_config_stuff"},{"Key":"ec2_instances","Source":"./ec2_config_stuff","Dir":"ec2_config_stuff"}]}
