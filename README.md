@@ -61,3 +61,18 @@ The end goal of this Pipeline is for docker images to be built and tested on a t
 Upon completion of these build steps, Jenkins then pulls these docker images down and puts them onto Kubernetes pods in the production environment.  
 This ensures that a tested and working application is running for the end users continuously, as tests are carried out after commits and only successful  
 builds will end up on the production environment.
+<br>
+<h3>Terraform</h3>
+<br>
+<h3>Ansible</h3>
+<br>
+<h3>Jenkins/Pipelines</h3>
+<br>
+<h3>Docker</h3>
+<br>
+<h3>Kubernetes</h3>
+<br>
+<h3>Front-end & Back-end test results</h3>
+<br>
+<h3>Future Improvements</h3>
+<br>
