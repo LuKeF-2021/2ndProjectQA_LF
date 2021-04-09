@@ -8,6 +8,6 @@ data:
     server {
         listen 80;
         location / {
-            return 200 "OK";
+            proxy_pass http://frontendApp:5000;
         }
     }
