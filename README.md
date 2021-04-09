@@ -109,6 +109,14 @@ images in my DockerHub repository:
 <br>
 <h3>Kubernetes</h3>
 <br>
+Kubernetes is an Orchestration tool that is very popular in industry as of late. It is a platform for managing workloads and services in containers. The hardware,  
+OS etc. are shared by all container instances on the Kubernetes node. Each node can have one Pod on it, but each pod can contain multiple containers, meaning that  
+a single node in a cluster can run multiple instances of an application. Within this specific project Kubernetes was utilised to create microservices of the app layers,  
+and builds in fault tolerance should one container be forced offline, others can be load balanced between while that container comes back online or is destroyed and  
+replaced by another instance of the application. With a load balancer (nginx was used here) the user can access any container via the same load balancer public IP  
+making it unnoticable to the end users what is going on. As EKS Clusters take 15-20 minutes to create after the command has been run, a video showing its creation  
+has been made but will be provided seperately similarly to above.
+<br>
 <h3>Front-end & Back-end test results</h3>
 <br>
 As this project was focused around CI/CD rather than coding proficiency on the application programming side, the QA instructors provided a basic  
