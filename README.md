@@ -87,6 +87,15 @@ demonstration has been produced for this and will be supplied seperately.
 <br>
 <h3>Jenkins/Pipelines</h3>
 <br>
+Jenkins is a Continuous Integration (CI) Server that helps automate software development. Building, testing and deploying can be triggered with use of a  
+Webhook that builds on the Pipeline whenever a new commit is made on the chosen branch to track (usually main or development). Jenkins uses the concept of  
+Pipelines to group together multiple steps/stages of a build process into one build task. Within this project Jenkins was leveraged to create docker containers  
+for the front-end and back-end of the application provided, test these parts of the application against predefined tests, and then push these robustly tested  
+images to DockerHub if the tests passed. Then these images were pulled down to kubernetes nodes and placed within pods/containers for the production environment  
+that end users could see and interact with. Below is an image of my Jenkins Pipeline running:
+<br>
+<img src="https://user-images.githubusercontent.com/78487781/114138710-eae9a900-9905-11eb-890a-939dfbba0d94.JPG">
+<br>
 <h3>Docker</h3>
 <br>
 <h3>Kubernetes</h3>
